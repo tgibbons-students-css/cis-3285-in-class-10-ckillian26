@@ -38,7 +38,7 @@ namespace CurrencyTrader
                 logger.LogWarning("Trade amount is below lower bound: '{0}'", tradeData[1]);
                 return false;
             }
-            if (tradeAmount > 1000000)
+            if (tradeAmount > 100000)
             {
                 logger.LogWarning("Trade amount is above upper bound: '{0}'", tradeData[1]);
                 return false;
